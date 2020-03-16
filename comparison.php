@@ -11,6 +11,8 @@
   </head>
   <body>
       <?php 
+      //php comparison include
+
       ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

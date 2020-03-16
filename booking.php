@@ -12,7 +12,7 @@
   </head>
   <body>
   <?php 
-
+//php booking code
 
 ?>   
     <!-- Optional JavaScript -->
