@@ -16,8 +16,8 @@
  <form action="compare.php" method="post">
    <div id = "color_form">
    <div id="centre_form">
- <p>Name and surname <input class="form-control" type="text" placeholder="Enter your name and surname" readonly></p>
- <p> Email <input class="form-control" type="email" placeholder="Enter your email" readonly></p>
+ <p>Name and surname <input class="form-control" type="text" placeholder="Enter your name and surname"></p>
+ <p> Email <input class="form-control" type="email" placeholder="Enter your email" ></p>
  <button type="submit" name="submit" value="submit" class="btn btn-secondary button_position">Submit</button>
 </div>
 </div>
