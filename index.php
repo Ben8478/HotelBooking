@@ -10,12 +10,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body id="body_image">
-  <form action="compare.php" method="post">
-    <input  type="text" name="username" value="name">
-    <input type="email" name="user_email" value ="user_email">
-    <button type="submit" name="submit" value="submit">Submit</button>
+    <div id ="header_position">
+<h1 id=" header_main">Our company name</h1>
+</div>
+ <form action="compare.php" method="post">
+   <div id = "color_form">
+   <div id="centre_form">
+ <p>Name and surname <input class="form-control" type="text" placeholder="Enter your name and surname" readonly></p>
+ <p> Email <input class="form-control" type="email" placeholder="Enter your email" readonly></p>
+ <button type="submit" name="submit" value="submit" class="btn btn-secondary button_position">Submit</button>
+</div>
+</div>
 
 
+
+
+  
 
 
   </form>

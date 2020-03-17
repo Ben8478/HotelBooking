@@ -5,3 +5,37 @@
     background-image: url(../images/hotel_start.jpg);
     width: 100%;
 }
+
+#header_position {
+    margin-top: 15%;
+    background-color: #7899ba;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+h1 {
+    width: 100%
+}
+
+#centre_form {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: #7899ba;
+    border-radius: 5px;
+}
+
+#color_form {
+    opacity: 0.8;
+}
+
+.button_position {
+    margin-left: 81.5%;
+}
+
+.show_inline {
+    display: inline-block;
+}
