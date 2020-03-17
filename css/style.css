@@ -1,1 +1,7 @@
-/*success*/
+#body_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-image: url(../images/hotel_start.jpg);
+    width: 100%;
+}
