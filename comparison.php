@@ -18,7 +18,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <body>
 
 
-  <h1>Welcome <?php var_dump($name) ?></h1>
+  <h1>Welcome to our booking page <?php echo $name ?></h1>
       <?php 
       //php comparison include
 
