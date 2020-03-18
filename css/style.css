@@ -39,3 +39,11 @@ h1 {
 .show_inline {
     display: inline-block;
 }
+
+#booking_image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-image: url(../images/hotel_booking.jpg);
+    width: 100%;
+}
