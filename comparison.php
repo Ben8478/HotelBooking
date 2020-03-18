@@ -1,15 +1,24 @@
+<?php session_start();
+if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
+  foreach ($_POST as $name) { //this for each loop breaks down the $_POST superglobal array to a string and can then assign the string to a variable in the session superglobal called name
+    $_SESSION['users'] = $name;
+  }
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+
+
+  <h1>Welcome <?php var_dump($name) ?></h1>
       <?php 
       //php comparison include
 
