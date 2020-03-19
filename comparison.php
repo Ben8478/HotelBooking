@@ -13,11 +13,7 @@
 
   <body>
 
-      <?php 
-      //php comparison include
-
-      ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0cea9e;">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -49,19 +45,11 @@
       <div class="booking-section">
           <br>
         <form method="post" action= <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> role="form" class="booking-box">
-          <!--<fieldset>
-          <legend>Personalia:</legend>
-          <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname" value="">
-          <br>
-          <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname" value="">
-          <br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" value="">
-          <br></fieldset>-->
+          
                 <div class="greetings">
-                  <?php /*Username*/ ?>
+                  <?php 
+                    //php comparison include
+                  ?>
                 </div>
           
           <fieldset>
@@ -105,19 +93,19 @@
           <input type="radio" name="r" id="r5">
 
           <div class="slide s1">
-            <img src="images/img1.jpg" alt="" class="icon-img">            
+            <img src="images/img1.jpg" alt="">            
           </div>
           <div class="slide">
-            <img src="images/img2.jpg" alt="" class="icon-img">
+            <img src="images/img2.jpg" alt="" >
           </div>
           <div class="slide">
-            <img src="images/img3.jpg" alt="" class="icon-img">
+            <img src="images/img3.jpg" alt="" >
           </div>
           <div class="slide">
-            <img src="images/img4.jpg" alt="" class="icon-img">
+            <img src="images/img4.jpg" alt="" >
           </div>
           <div class="slide">
-            <img src="images/img5.jpg" alt="" class="icon-img">
+            <img src="images/img5.jpg" alt="" >
           </div>            
         </div>
 
@@ -137,7 +125,7 @@
         <br>
 
         <div class="container-2">
-          <h3 class="cont-2-text"><b>619,784</b> <br>Thousand hotels to choose from with the latest updated prices in real time</h3>
+          <h3 class="cont-2-text"><b class="number">619,784</b> <br>Thousand hotels to choose from with the latest updated prices in real time</h3>
         </div>
         
     <br>
@@ -147,19 +135,19 @@
   <!--Icon section-->
   <div class="container">
   <div class="row">
-    <div class="col "><img src="images/icon1.png" alt="" width="100px"><br>
+    <div class="col "><img src="images/icon1.png" alt="" width="100px" class="icon-img"><br>
       <h4>Over 100 Hotel Booking Sites</h4>
     </div>
-    <div class="col "><img src="images/icon2.png" alt="" width="100px"><br>
+    <div class="col "><img src="images/icon2.png" alt="" width="100px" class="icon-img"><br>
       <h4>Compare all Airlines</h4>
     </div>
-    <div class="col "><img src="images/icon3.png" alt="" width="100px"><br>
+    <div class="col "><img src="images/icon3.png" alt="" width="100px" class="icon-img"><br>
       <h4>High-end Entertainment</h4>
     </div>
-    <div class="col "><img src="images/icon4.png" alt="" width="100px"><br>
+    <div class="col "><img src="images/icon4.png" alt="" width="100px" class="icon-img"><br>
       <h4>Best Rates Guaranteed</h4>
     </div>       
-    <div class="col "><img src="images/icon5.png" alt="" width="100px"><br>
+    <div class="col "><img src="images/icon5.png" alt="" width="100px" class="icon-img"><br>
       <h4>Compare Hotels Worldwide</h4>
     </div>
   </div>
