@@ -71,7 +71,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
         <div class="col">
           <div class="booking-section">
             <br>
-            <form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> role="form" class="booking-box">
+            <form method="POST" action= "booking.php"role="form" class="booking-box">
               <!--<fieldset> 
           <legend>Personalia:</legend> 
           <label for="fname">First name:</label><br> 
@@ -90,19 +90,17 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
               <fieldset>
                 <legend>Destination Details:</legend><br>
                 <img src="" alt=""><label for="hotel1">Hotel 1:</label>
-                <select id="allhotels" name="allhotels">
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
+                <select id="allhotels" name="allhotels1">
+                  <option value="hotel1" name = "Hotel1">Hotel Ben</option>
+                  <option value="Hotel2" name ="Hotel2"> Hotel Reece</option>
+                  <option value="Hotel3"name ="hotel3">Hotel Alex</option>
                 </select>
 
                 <img src="" alt=""><label for="hotel2">Hotel 2:</label>
-                <select id="allhotels" name="allhotels">
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
+                <select id="allhotels" name="allhotels2">
+                <option value="hotel1" name = "Hotel1">Hotel Ben</option>
+                  <option value="Hotel2" name ="Hotel2"> Hotel Reece</option>
+                  <option value="Hotel3"name ="hotel3">Hotel Alex</option>
                 </select>
                 <br><br>
                 <label for="checkin">Check in date:</label><br>
@@ -163,11 +161,9 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
     </div>
     <br>
   </div>
-  <?php
-  //php comparison include
 
-  ?>
-  <!-- Optional JavaScript -->
+  
+<!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
