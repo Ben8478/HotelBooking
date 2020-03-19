@@ -15,42 +15,52 @@ class Hotel {
 
 
     }
-    function compare(){
+    // function compare(){
 
 
 
 
-    }
+    // }
  function hotel_show(){
-  
+?>
+<div style="background-color:aqua; width :30%; display:inline-block; margin-left:5%;">
+<div style="text-align:center;">
+<h1><?php echo "<br><strong>$this->name</strong><br><br>";?></h1>
+ <p><?php echo "<br><strong>Pool</strong><br>$this->Pool<br>"; ?></p>
+ <p><?php echo "<br><strong>Wifi</strong><br>$this->wifi<br>"; ?></p>
+ <p><?php echo "<br><strong>Parking</strong><br>$this->Parking<br>";?></p>
+ <p><?php echo "<br><strong>Security</strong><br>$this->security<br><br>";?></p>
+ <input type="checkbox">
+ 
+</div>
+</div>
+ 
+ 
+ 
 
-   
-     
-     
+<?php
+         
 
-echo "<div style = 'background-color : aqua;' width: 30%;><br><strong>$this->name</strong><br><br></div>";
-echo "<div style = 'background-color : aqua;' width: 30%;><br><strong>Pool</strong><br>$this->Pool<br></div>";
-echo "<div style = 'background-color : aqua;' width: 30%;><br><strong>Wifi</strong><br>$this->wifi<br></div>";
-echo "<br><strong>Parking</strong><br>$this->Parking<br>";
-echo "<br><strong>Security</strong><br>$this->security<br><br>";
-
-     
-          
-     
-    }
+ 
+}
 
     function hotel_price(){
 
         if (isset($_POST)){
         $date1 = $_POST['indate'];
         $date2 = $_POST['outdate'];
-        echo "<strong>Price for ". ((strtotime( $date2 )  - strtotime($date1))/86400)." days : R</strong>" . $this->price * ((strtotime( $date2 )  - strtotime($date1))/86400);
-        }
+        ?>
+
+        <div  style="background-color:aqua; width :10%; display:inline-block"    > 
+        <?php echo "<strong>Price for ". ((strtotime( $date2 )  - strtotime($date1))/86400)." days : R</strong>" . $this->price * ((strtotime( $date2 )  - strtotime($date1))/86400);?>
+        </div>
+        <?php
+    }
     }
      }
 
 
-    
+
 
 
 

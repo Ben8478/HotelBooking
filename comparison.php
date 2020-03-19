@@ -18,9 +18,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 </head>
 
 <body>
-  <form action="booking.php">
-    <button type="submit">Booking</button>
-  </form>
+
 
   <h1>Welcome to our booking page <?php echo $name ?></h1>
   <!--Nav bar-->
@@ -91,16 +89,16 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
                 <legend>Destination Details:</legend><br>
                 <img src="" alt=""><label for="hotel1">Hotel 1:</label>
                 <select id="allhotels" name="allhotels1">
-                  <option value="hotel1" name = "Hotel1">Hotel Ben</option>
-                  <option value="Hotel2" name ="Hotel2"> Hotel Reece</option>
-                  <option value="Hotel3"name ="hotel3">Hotel Alex</option>
+                  <option value="hotel1" name = "hotel1">Hotel Ben</option>
+                  <option value="hotel2" name ="hotel2"> Hotel Reece</option>
+                  <option value="hotel3"name ="hotel3">Hotel Alex</option>
                 </select>
 
                 <img src="" alt=""><label for="hotel2">Hotel 2:</label>
                 <select id="allhotels" name="allhotels2">
-                <option value="hotel1" name = "Hotel1">Hotel Ben</option>
-                  <option value="Hotel2" name ="Hotel2"> Hotel Reece</option>
-                  <option value="Hotel3"name ="hotel3">Hotel Alex</option>
+                <option value="hotel1" name = "hotel1">Hotel Ben</option>
+                  <option value="hotel2" name ="hotel2"> Hotel Reece</option>
+                  <option value="hotel3"name ="hotel3">Hotel Alex</option>
                 </select>
                 <br><br>
                 <label for="checkin">Check in date:</label><br>

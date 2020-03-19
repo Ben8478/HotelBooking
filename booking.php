@@ -29,30 +29,31 @@
 <?php 
 
 switch($_POST['allhotels1']){
-case 'hotel1':
-  echo $ben->hotel_show();
-break;
-  case 'hotel2':
-    echo $reece->hotel_show();
+  case ('hotel1'):
+    echo $ben->hotel_show().$ben->hotel_price();
   break;
-  case 'hotel3':
-    echo $alex->hotel_show();
-  break;
-
+    case ('hotel2'):
+      echo $reece->hotel_show().$reece->hotel_price();
+    break;
+    case ('hotel3'):
+      echo $alex->hotel_show().$alex->hotel_price();
+    break;
+    default :
+  echo " choose a hotel";
   }
-  
 switch($_POST['allhotels2']){
 
-  case 'hotel1':
-    echo $ben->hotel_show();
+  case ('hotel1'):
+    echo $ben->hotel_show().$ben->hotel_price();
   break;
-    case 'hotel2':
-      echo $reece->hotel_show();
+    case ('hotel2'):
+      echo $reece->hotel_show().$reece->hotel_price();
     break;
-    case 'hotel3':
-      echo $alex->hotel_show();
+    case ('hotel3'):
+      echo $alex->hotel_show().$alex->hotel_price();
     break;
-  
+    default :
+  echo " choose a hotel";
 }
 //   if (isset($_POST)){
 //     if ($_POST["hotel1"]){
@@ -71,6 +72,10 @@ switch($_POST['allhotels2']){
 //     }
   
 // echo $ben->hotel_price()?>
+
+<button style ="display:block;margin-left:auto;
+margin-right:auto;
+";>Book hotel</button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
