@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body id= "booking_image">
-  <?php include "include/compare.php" ?>
-    <h1>Thank you booking <?php  echo $_SESSION["users"] ?></h1>
+  <?php include "include/compare.php"; ?>
+  <?php include "include/user.php";
+  ?>
+    <h1>Thank you booking <?php  echo $_SESSION['name'];?></h1>
   <?php 
   $reece = new hotel ('Hotel reece','yes','no','yes','yes','450');
   $ben = new hotel ('Hotel Ben','no','yes','yes','no','550');
@@ -26,17 +28,18 @@
 
 
 ?>   
+<form action="#" method="POST">
 <?php 
 
 switch($_POST['allhotels1']){
   case ('hotel1'):
-    echo $ben->hotel_show().$ben->hotel_price();
+    echo $ben->hotel_show().$ben->hotel_price()."<input type =\"checkbox\">";
   break;
     case ('hotel2'):
-      echo $reece->hotel_show().$reece->hotel_price();
+      echo $reece->hotel_show().$reece->hotel_price()."<input type =\"checkbox\">";
     break;
     case ('hotel3'):
-      echo $alex->hotel_show().$alex->hotel_price();
+      echo $alex->hotel_show().$alex->hotel_price()."<input type =\"checkbox\" >";
     break;
     default :
   echo " choose a hotel";
@@ -44,13 +47,13 @@ switch($_POST['allhotels1']){
 switch($_POST['allhotels2']){
 
   case ('hotel1'):
-    echo $ben->hotel_show().$ben->hotel_price();
+    echo $ben->hotel_show().$ben->hotel_price()."<input type =\"checkbox\">";
   break;
     case ('hotel2'):
-      echo $reece->hotel_show().$reece->hotel_price();
+      echo $reece->hotel_show().$reece->hotel_price()."<input type =\"checkbox\">";
     break;
     case ('hotel3'):
-      echo $alex->hotel_show().$alex->hotel_price();
+      echo $alex->hotel_show().$alex->hotel_price()."<input type =\"checkbox\">";
     break;
     default :
   echo " choose a hotel";
@@ -76,6 +79,7 @@ switch($_POST['allhotels2']){
 <button style ="display:block;margin-left:auto;
 margin-right:auto;
 ";>Book hotel</button>
+</form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

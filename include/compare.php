@@ -23,6 +23,7 @@ class Hotel {
     // }
  function hotel_show(){
 ?>
+
 <div style="background-color:aqua; width :30%; display:inline-block; margin-left:5%;">
 <div style="text-align:center;">
 <h1><?php echo "<br><strong>$this->name</strong><br><br>";?></h1>
@@ -30,12 +31,12 @@ class Hotel {
  <p><?php echo "<br><strong>Wifi</strong><br>$this->wifi<br>"; ?></p>
  <p><?php echo "<br><strong>Parking</strong><br>$this->Parking<br>";?></p>
  <p><?php echo "<br><strong>Security</strong><br>$this->security<br><br>";?></p>
- <input type="checkbox">
+ 
  
 </div>
 </div>
  
- 
+
  
 
 <?php

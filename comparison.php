@@ -1,9 +1,11 @@
 <?php session_start();
 if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
-  foreach ($_POST as $name) { //this for each loop breaks down the $_POST superglobal array to a string and can then assign the string to a variable in the session superglobal called name
-    $_SESSION['users'] = $name;
+  //this for each loop breaks down the $_POST superglobal array to a string and can then assign the string to a variable in the session superglobal called name
+   $_SESSION['name'] =$_POST['name'] ;
+   $_SESSION['email'] =$_POST['email'];
   }
-}
+
+
 ?>
 
 <!doctype html>
@@ -19,9 +21,10 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
+<?php include "include/user.php" ;
+$the_user = new User($_POST['email'], $_POST['name']);?>
 <body>
-  <h1> Welcome to our booking page <?php echo $name; ?></h1>
+  <h1> Welcome to our booking page <?php echo $the_user->display_name(); ?></h1>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

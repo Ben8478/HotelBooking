@@ -19,7 +19,7 @@
     <div id="color_form">
       <div id="centre_form">
         <p>Name and surname <input type="text" class="form-control" name="name" placeholder="Enter your name and surname"></p>
-        <p> Email <input class="form-control" type="email" placeholder="Enter your email"></p>
+        <p> Email <input class="form-control" type="email" name ="email" placeholder="Enter your email"></p>
         <button type="submit"  value="submit" class="btn btn-secondary button_position">Submit</button>
         </form>
       </div>
