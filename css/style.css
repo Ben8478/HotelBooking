@@ -1,4 +1,4 @@
-#body_image {
+/*#body_image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
@@ -38,9 +38,9 @@ h1 {
 
 .show_inline {
     display: inline-block;
-    body{
+}
+*/
 
-    }
     /*Begin Slideshow*/
     .slidershow{
         width: 700px;
@@ -121,7 +121,7 @@ h1 {
         width: 150px;
     }
     .top-section{
-        background-color: #3;
+        background-color: #378bde;
     }
     .greetings{
     
