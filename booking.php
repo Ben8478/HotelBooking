@@ -1,5 +1,8 @@
 
-<?php session_start() ?>
+<?php session_start(); 
+
+
+?>
 <!doctype html>
 
 <html lang="en">
@@ -14,12 +17,65 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body id= "booking_image">
-
+  <?php include "include/compare.php" ?>
     <h1>Thank you booking <?php  echo $_SESSION["users"] ?></h1>
   <?php 
+  $reece = new hotel ('Hotel reece','yes','no','yes','yes','450');
+  $ben = new hotel ('Hotel Ben','no','yes','yes','no','550');
+  $alex = new hotel ('Hotel alex','yes','yes','yes','yes','600');
 
 
 ?>   
+<?php 
+
+switch($_POST['allhotels1']){
+  case ('hotel1'):
+    echo $ben->hotel_show().$ben->hotel_price();
+  break;
+    case ('hotel2'):
+      echo $reece->hotel_show().$reece->hotel_price();
+    break;
+    case ('hotel3'):
+      echo $alex->hotel_show().$alex->hotel_price();
+    break;
+    default :
+  echo " choose a hotel";
+  }
+switch($_POST['allhotels2']){
+
+  case ('hotel1'):
+    echo $ben->hotel_show().$ben->hotel_price();
+  break;
+    case ('hotel2'):
+      echo $reece->hotel_show().$reece->hotel_price();
+    break;
+    case ('hotel3'):
+      echo $alex->hotel_show().$alex->hotel_price();
+    break;
+    default :
+  echo " choose a hotel";
+}
+//   if (isset($_POST)){
+//     if ($_POST["hotel1"]){
+//     echo $ben->hotel_show();
+//     }
+//     else if ($_POST["hotel2"]){
+//       echo $reece->hotel_show();
+//     }
+
+//       else if ($_POST["hotel3"]){
+//       echo $alex->hotel_show();
+//       }
+// else {
+//   echo "select a Hotel.";
+// }
+//     }
+  
+// echo $ben->hotel_price()?>
+
+<button style ="display:block;margin-left:auto;
+margin-right:auto;
+";>Book hotel</button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
