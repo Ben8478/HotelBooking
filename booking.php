@@ -17,29 +17,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body id= "booking_image">
-  <?php include "include/compare.php"; ?>
-  <?php include "include/user.php";
-  ?>
-    <h1>Thank you booking <?php  echo $_SESSION['name'];?></h1>
-  <?php 
-  $reece = new hotel ('Hotel reece','yes','no','yes','yes','450');
-  $ben = new hotel ('Hotel Ben','no','yes','yes','no','550');
-  $alex = new hotel ('Hotel alex','yes','yes','yes','yes','600');
+  <?php include "include/hotels.php"; ?>
 
+ 
+    <h1>Dear  <?php  echo $_SESSION['name'];?>, Please select only one of the following options. </h1>
+  <?php 
+  
 
 ?>   
-<form action="#" method="POST">
+<form action="mail.php" method="POST">
 <?php 
 
 switch($_POST['allhotels1']){
   case ('hotel1'):
-    echo $ben->hotel_show().$ben->hotel_price()."<input type =\"checkbox\">";
+    echo $ben->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Ben\"'>";
   break;
     case ('hotel2'):
-      echo $reece->hotel_show().$reece->hotel_price()."<input type =\"checkbox\">";
+      echo $reece->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Reece\"'>";
     break;
     case ('hotel3'):
-      echo $alex->hotel_show().$alex->hotel_price()."<input type =\"checkbox\" >";
+      echo $alex->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Alex\">";
     break;
     default :
   echo " choose a hotel";
@@ -47,38 +44,19 @@ switch($_POST['allhotels1']){
 switch($_POST['allhotels2']){
 
   case ('hotel1'):
-    echo $ben->hotel_show().$ben->hotel_price()."<input type =\"checkbox\">";
+    echo $ben->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Ben\">";
   break;
     case ('hotel2'):
-      echo $reece->hotel_show().$reece->hotel_price()."<input type =\"checkbox\">";
+      echo $reece->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Reece\">";
     break;
     case ('hotel3'):
-      echo $alex->hotel_show().$alex->hotel_price()."<input type =\"checkbox\">";
+      echo $alex->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Alex\">";
     break;
     default :
   echo " choose a hotel";
-}
-//   if (isset($_POST)){
-//     if ($_POST["hotel1"]){
-//     echo $ben->hotel_show();
-//     }
-//     else if ($_POST["hotel2"]){
-//       echo $reece->hotel_show();
-//     }
+}?>
 
-//       else if ($_POST["hotel3"]){
-//       echo $alex->hotel_show();
-//       }
-// else {
-//   echo "select a Hotel.";
-// }
-//     }
-  
-// echo $ben->hotel_price()?>
-
-<button style ="display:block;margin-left:auto;
-margin-right:auto;
-";>Book hotel</button>
+<button type ='submit' name="email"class = "book_button">Book hotel</button>
 </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -21,10 +21,10 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<?php include "include/user.php" ;
-$the_user = new User($_POST['email'], $_POST['name']);?>
+<?php include "include/hotels.php" ;
+?>
 <body>
-  <h1> Welcome to our booking page <?php echo $the_user->display_name(); ?></h1>
+  <h1> Welcome to our booking page <?php echo $_SESSION['name']; ?></h1>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,7 +107,7 @@ $the_user = new User($_POST['email'], $_POST['name']);?>
               <input type="radio" name="r" id="r5">
 
               <div class="slide s1">
-                <img src="images/img1.jpg" alt="">
+                <img src="images/img3.jpg" alt="">
               </div>
               <div class="slide">
                 <img src="images/img2.jpg" alt="">

@@ -223,6 +223,41 @@ legend {
     padding-right: 10px;
 }
 
+.hotel_compare {
+    background-color: #378bde;
+    width: 30%;
+    display: inline-block;
+    margin-left: 12%;
+    border-radius: 5px;
+}
+
+.book_button {
+    font-size: 20px;
+    background-color: #378bde;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #378bde;
+    border-radius: 5%;
+}
+
+#mail_background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/img3.jpg);
+}
+
+#header_mail {
+    padding: 5%;
+    width: 30%;
+    font-size: 20px;
+    background-color: rgb(220, 220, 220);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
 footer {
     margin: 0px;
     background-color: #4e4e4e;
