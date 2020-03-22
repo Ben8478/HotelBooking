@@ -58,13 +58,13 @@
 
 switch($_POST['allhotels1']){
   case ('hotel1'):
-    echo $ben->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Ben\"'>";
+    echo $ben->hotel_show();
   break;
     case ('hotel2'):
-      echo $reece->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Reece\"'>";
+      echo $reece->hotel_show();
     break;
     case ('hotel3'):
-      echo $alex->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Alex\">";
+      echo $alex->hotel_show();
     break;
     default :
   echo " choose a hotel";
@@ -72,13 +72,13 @@ switch($_POST['allhotels1']){
 switch($_POST['allhotels2']){
 
   case ('hotel1'):
-    echo $ben->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Ben\">";
+    echo $ben->hotel_show();
   break;
     case ('hotel2'):
-      echo $reece->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Reece\">";
+      echo $reece->hotel_show();
     break;
     case ('hotel3'):
-      echo $alex->hotel_show()."<input type =\"checkbox\" name =\"hotel\" value=\"Alex\">";
+      echo $alex->hotel_show();
     break;
     default :
   echo " choose a hotel";

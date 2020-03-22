@@ -30,7 +30,7 @@ class Hotel {
  <p><?php echo "<strong>Parking</strong><br>$this->Parking<br>";?></p>
  <p><?php echo "<strong>Security</strong><br>$this->security<br><br>";?></p>
  <?php echo "<strong>Price for ". ((strtotime( $date2 )  - strtotime($date1))/86400)." days : R</strong>" . $this->price * ((strtotime( $date2 )  - strtotime($date1))/86400);?>
- 
+ <?php echo "<input type =\"checkbox\" name =\"hotel\" value=\"$this->name\"'></div>";?>
 </div>
 </div>
  

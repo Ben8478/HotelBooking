@@ -47,14 +47,15 @@
     <div id="user_info">
       <div id="color_form">
         <div id="centre_form">
-          <p>Name and surname <input type="text" class="form-control" name="name" placeholder="Enter your name and surname"></p>
-          <p> Email <input class="form-control" type="email" name="email" placeholder="Enter your email"></p>
+          <p>Name and surname <input type="text" class="form-control" name="name" placeholder="Enter your name and surname" required></p>
+          <p> Email <input class="form-control" type="email" name="email" placeholder="Enter your email" required></p>
+          <p>The number of days you would like to stay <input type= "number" min="1" max ="40" name="duration" value="duration"></p>
           <div >
             <div class="button_position">
               <button type="submit" value="submit" class="btn btn-secondary">Submit</button>
             </div>
           </div>
-  </form>
+  </form> 
   </div>
   </div>
   </div>

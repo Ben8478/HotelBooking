@@ -53,25 +53,22 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
       </form>
     </div>
   </nav>
-  <div style="background-color:#343a40; opacity:0.8;";>
-  <h1 style="background-color:#343a40;color:white;width:20%;margin-bottom:-.1%;margin-left:auto;margin-right:auto;"> Welcome <?php echo $_SESSION['name']; ?></h1>
+  <div id ="header_select">
+  <h1 id ="select_h1"> Hi <?php echo $_SESSION['name']; ?>, we see you are looking to stay for <?php echo $_POST['duration']?> days, please select hotels to compare and make a booking.</h1>
   </div>
   <!--fill out form-->
 
-  <div class="top-section">
-    <div class="container">
-      <div class="row">
-        <div class="col">
+
+<section id="background-color">
           <div class="booking-section">
             <br>
             <form method="post" action="booking.php" role="form" class="booking-box">
 
-              <div class="greetings">
+              
 
-              </div>
-
-              <fieldset>
-                
+            
+ 
+    <div >
                 <legend>Destination Details:</legend><br>
                 <div class="hotel1">
                 <img src="images/img-book2.png" alt="" class="book-img"><label for="hotel1">Hotel 1:</label>
@@ -99,49 +96,55 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
                 <br>
                 <button type="submit" name="submit" class="button compare-but">Compare</button><br><br>
             </form>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="slidershow middle">
-
-            <div class="slides">
-              <input type="radio" name="r" id="r1" checked>
-              <input type="radio" name="r" id="r2">
-              <input type="radio" name="r" id="r3">
-              <input type="radio" name="r" id="r4">
-              <input type="radio" name="r" id="r5">
-
-              <div class="slide s1">
-                <img src="images/img3.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="images/img2.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="images/img3.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="images/img4.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="images/img5.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="navigation">
-              <label for="r1" class="bar"></label>
-              <label for="r2" class="bar"></label>
-              <label for="r3" class="bar"></label>
-              <label for="r4" class="bar"></label>
-              <label for="r5" class="bar"></label>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
+</div>
     </div>
+    <div class="container position">
+    <div class="col">
+          
+    <div class="slidershow middle">
+
+<div class="slides">
+  <input type="radio" name="r" id="r1" checked>
+  <input type="radio" name="r" id="r2">
+  <input type="radio" name="r" id="r3">
+  <input type="radio" name="r" id="r4">
+  <input type="radio" name="r" id="r5">
+
+  <div class="slide s1">
+    <img src="images/img3.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="images/img2.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="images/img3.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="images/img4.jpg" alt="">
+  </div>
+  <div class="slide">
+    <img src="images/img5.jpg" alt="">
+  </div>
+</div>
+
+<div class="navigation">
+  <label for="r1" class="bar"></label>
+  <label for="r2" class="bar"></label>
+  <label for="r3" class="bar"></label>
+  <label for="r4" class="bar"></label>
+  <label for="r5" class="bar"></label>
+</div>
+
+</section>
+</div>
+</div> 
+    </div>
+  </div>   
+
+        
+          
+        
+    
     <br>
 
     <div class="container-2">
