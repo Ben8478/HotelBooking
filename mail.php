@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body id="mail_background">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <p class="nav-text">Home</p> <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <p class="nav-text">Booking</p>
+          </a>
+        </li>
+
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 ouline-color" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
   <?php
 
 // Import PHPMailer classes into the global namespace
@@ -49,11 +77,11 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Hotel Booking';
-    $mail->Body    = "Dear ".$_SESSION['name'].","." .<b>Thank you for your booking at hotel ".$_POST['hotel'].". The hotel manager will be in contact with you shortly to confirm the booking. Kindest Regards </b>";
+    $mail->Body    = "Dear ".$_SESSION['name'].","." <br>Thank you for your booking at hotel ".$_POST['hotel'].". The hotel manager will be in contact with you shortly to confirm your booking.</br> Kindest Regards </b>";
     $mail->AltBody = "Dear " .$_SESSION['name'].", Thank you for your booking at hotel ".$_POST['hotel']." The hotel manager will be in contact with you shortly to confirm the booking. Kindest Regards ";
 
     $mail->send();
-    echo "<div><h1 id =\"header_mail\" style =\"font-size:30px;\">A confirmation email has been sent</h1></div>";
+    echo "<div><h1 id =\"header_mail\">A confirmation email has been sent</h1></div>";
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 

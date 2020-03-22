@@ -13,7 +13,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 
 <head>
   <title>Title</title>
-  <!-- Required meta tags -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 <?php include "include/hotels.php" ;
 ?>
 <body>
-  <h1> Welcome to our booking page <?php echo $_SESSION['name']; ?></h1>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,9 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
       </form>
     </div>
   </nav>
-
+  <div style="background-color:#343a40; opacity:0.8;";>
+  <h1 style="background-color:#343a40;color:white;width:20%;margin-bottom:-.1%;margin-left:auto;margin-right:auto;"> Welcome <?php echo $_SESSION['name']; ?></h1>
+  </div>
   <!--fill out form-->
 
   <div class="top-section">
@@ -69,20 +71,24 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
               </div>
 
               <fieldset>
+                
                 <legend>Destination Details:</legend><br>
+                <div class="hotel1">
                 <img src="images/img-book2.png" alt="" class="book-img"><label for="hotel1">Hotel 1:</label>
                 <select id="allhotels" name="allhotels1">
                   <option value="hotel1" name="hotel1">Hotel Ben</option>
                   <option value="hotel2" name="hotel2"> Hotel Reece</option>
                   <option value="hotel3" name="hotel3">Hotel Alex</option>
                 </select>
-
-                <img src="images/img-book2.png" alt="" class="book-img"><label for="hotel2">Hotel 2:</label>
+                </div>
+                <div class="hotel2">
+                  <img src="images/img-book2.png" alt="" class="book-img "><label for="hotel2">Hotel 2:</label>
                 <select id="allhotels" name="allhotels2">
                   <option value="hotel1" name="hotel1">Hotel Ben</option>
                   <option value="hotel2" name="hotel2"> Hotel Reece</option>
                   <option value="hotel3" name="hotel3">Hotel Alex</option>
                 </select>
+                </div>
                 <br><br>
                 <img src="images/img-book.png" alt="" class="book-img"><label for="checkin">Check in date:</label><br>
                 <input type="date" id="checkin" name="indate" min="2020-01-01" max="2023-12-31" required>
@@ -95,7 +101,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
             </form>
           </div>
         </div>
-
+      
         <div class="col">
           <div class="slidershow middle">
 
