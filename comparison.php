@@ -73,17 +73,17 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
                 <div class="hotel1">
                 <img src="images/img-book2.png" alt="" class="book-img"><label for="hotel1">Hotel 1:</label>
                 <select id="allhotels" name="allhotels1">
-                  <option value="hotel1" name="hotel1">Hotel Ben</option>
-                  <option value="hotel2" name="hotel2"> Hotel Reece</option>
-                  <option value="hotel3" name="hotel3">Hotel Alex</option>
+                  <option value="hotel1" name="hotel1">The Table bay hotel</option>
+                  <option value="hotel2" name="hotel2"> Cape Gace Hotel</option>
+                  <option value="hotel3" name="hotel3">The Silo Hotel</option>
                 </select>
                 </div>
                 <div class="hotel2">
                   <img src="images/img-book2.png" alt="" class="book-img "><label for="hotel2">Hotel 2:</label>
                 <select id="allhotels" name="allhotels2">
-                  <option value="hotel1" name="hotel1">Hotel Ben</option>
-                  <option value="hotel2" name="hotel2"> Hotel Reece</option>
-                  <option value="hotel3" name="hotel3">Hotel Alex</option>
+                  <option value="hotel1" name="hotel1">The Table bay hotel</option>
+                  <option value="hotel2" name="hotel2"> Cape Gace Hotel</option>
+                  <option value="hotel3" name="hotel3">The Silo Hotel</option>
                 </select>
                 </div>
                 <br><br>
@@ -99,7 +99,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 </div>
     </div>
     <div class="container position">
-    <div class="col">
+   
           
     <div class="slidershow middle">
 
@@ -139,7 +139,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 </div>
 </div> 
     </div>
-  </div>   
+    
 
         
           
@@ -158,19 +158,19 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <!--Icon section-->
   <div class="container">
     <div class="row">
-      <div class="col "><img src="images/icon1.png" alt="" width="100px" class="icon-img"><br>
+      <div class="col "><img src="images/icon1.png" alt="" width="80px" class="icon-img"><br>
         <h4>Over 100 Hotel Booking Sites</h4>
       </div>
-      <div class="col "><img src="images/icon2.png" alt="" width="100px" class="icon-img"><br>
+      <div class="col "><img src="images/icon2.png" alt="" width="80px" class="icon-img"><br>
         <h4>Compare all Airlines</h4>
       </div>
-      <div class="col "><img src="images/icon3.png" alt="" width="100px" class="icon-img"><br>
+      <div class="col "><img src="images/icon3.png" alt="" width="80px" class="icon-img"><br>
         <h4>High-end Entertainment</h4>
       </div>
-      <div class="col "><img src="images/icon4.png" alt="" width="100px" class="icon-img"><br>
+      <div class="col "><img src="images/icon4.png" alt="" width="80px" class="icon-img"><br>
         <h4>Best Rates Guaranteed</h4>
       </div>
-      <div class="col "><img src="images/icon5.png" alt="" width="100px" class="icon-img"><br>
+      <div class="col "><img src="images/icon5.png" alt="" width="80px" class="icon-img"><br>
         <h4>Compare Hotels Worldwide</h4>
       </div>
     </div>

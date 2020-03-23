@@ -58,13 +58,13 @@
 
 switch($_POST['allhotels1']){
   case ('hotel1'):
-    echo $ben->hotel_show();
+    echo $Table_bay->hotel_show();
   break;
     case ('hotel2'):
-      echo $reece->hotel_show();
+      echo $Cape_Grace->hotel_show();
     break;
     case ('hotel3'):
-      echo $alex->hotel_show();
+      echo $Silo->hotel_show();
     break;
     default :
   echo " choose a hotel";
@@ -72,13 +72,13 @@ switch($_POST['allhotels1']){
 switch($_POST['allhotels2']){
 
   case ('hotel1'):
-    echo $ben->hotel_show();
+    echo $Table_bay->hotel_show();
   break;
     case ('hotel2'):
-      echo $reece->hotel_show();
+      echo $Cape_Grace->hotel_show();
     break;
     case ('hotel3'):
-      echo $alex->hotel_show();
+      echo $Silo->hotel_show();
     break;
     default :
   echo " choose a hotel";
