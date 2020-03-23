@@ -43,6 +43,7 @@
   <div id="header_position">
     <h1 id=" header_main">Welcome to K&L Hotels</h1>
   </div>
+  <!-- A form to capture initial user information -->
   <form action="comparison.php" method="POST">
     <div id="user_info">
       <div id="color_form">
