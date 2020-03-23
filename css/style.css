@@ -260,6 +260,7 @@
     }
     
     #select_h1 {
+        font-family: 'Open Sans Condensed', sans-serif;
         background-color: #343a40;
         color: white;
         margin-bottom: -.1%;
@@ -267,10 +268,11 @@
     }
     
     #header_booking {
+        font-family: 'Open Sans Condensed', sans-serif;
         background-color: #343a40;
         color: rgb(220, 220, 220);
         padding: 1%;
-        font-size: 20px;
+        font-size: 50px;
         margin-left: auto;
         margin-right: auto;
         opacity: 0.8;
@@ -278,14 +280,15 @@
     
     #booking_head_position {
         opacity: 0.8;
-        padding: 5%;
-        font-size: 20px;
+        padding: 2%;
+        font-size: 50px;
         background-color: #343a40;
         width: 100%;
         color: white;
     }
     
     .hotel_compare {
+        vertical-align: top;
         margin-top: 5%;
         opacity: 0.8;
         background-color: #378bde;
@@ -305,6 +308,16 @@
         border: 2px solid #343a40;
         border-radius: 5%;
         opacity: 0.8;
+        margin-bottom: 2%;
+        color: white;
+    }
+    
+    .container_icon {
+        border: 5 px solid black;
+        margin: 15px;
+        padding: 2px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px grey;
     }
     
     .checkbox {
@@ -319,8 +332,9 @@
     
     #header_mail {
         opacity: 0.8;
-        padding: 5%;
-        font-size: 20px;
+        padding: 2%;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 50px;
         background-color: #343a40;
         width: 100%;
         color: white;
