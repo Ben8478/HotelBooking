@@ -325,7 +325,6 @@
     }
     
     #mail_background {
-        background-repeat: no-repeat;
         background-size: cover;
         background-image: url(../images/img3.jpg);
     }
