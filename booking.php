@@ -7,7 +7,7 @@
 <html lang="en">
 
 <head>
-  <title>Booking</title>
+  <title>Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
