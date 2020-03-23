@@ -133,19 +133,19 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <!--Icon section-->
   <div class="container">
     <div class="row">
-      <div class="col "><img src="images/icon1.png" alt="" width="80px" class="icon-img"><br>
+      <div class="col container_icon"><img src="images/icon1.png" alt="" width="80px" class="icon-img"><br>
         <h4>Over 100 Hotel Booking Sites</h4>
       </div>
-      <div class="col "><img src="images/icon2.png" alt="" width="80px" class="icon-img"><br>
+      <div class="col container_icon"><img src="images/icon2.png" alt="" width="80px" class="icon-img"><br>
         <h4>Compare all Airlines</h4>
       </div>
-      <div class="col "><img src="images/icon3.png" alt="" width="80px" class="icon-img"><br>
+      <div class="col container_icon"><img src="images/icon3.png" alt="" width="80px" class="icon-img"><br>
         <h4>High-end Entertainment</h4>
       </div>
-      <div class="col "><img src="images/icon4.png" alt="" width="80px" class="icon-img"><br>
+      <div class="col container_icon"><img src="images/icon4.png" alt="" width="80px" class="icon-img"><br>
         <h4>Best Rates Guaranteed</h4>
       </div>
-      <div class="col "><img src="images/icon5.png" alt="" width="80px" class="icon-img"><br>
+      <div class="col container_icon"><img src="images/icon5.png" alt="" width="80px" class="icon-img"><br>
         <h4>Compare Hotels Worldwide</h4>
       </div>
     </div>
