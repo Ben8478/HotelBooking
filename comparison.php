@@ -7,10 +7,8 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 
 
 ?>
-
 <!doctype html>
 <html lang="en">
-
 <head>
   <title>Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -23,9 +21,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 </head>
 <?php include "include/hotels.php";
 ?>
-
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +47,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
     </div>
   </nav>
   <div id="header_select">
-    <h1 id="select_h1"> Hi <?php echo $_SESSION['name']; ?>, we see you are looking to stay for <?php echo $_POST['duration'] ?> days, please select hotels to compare and make a booking.</h1>
+    <h1 id="select_h1"> Hi <?php echo $_SESSION['name']; ?> please select hotels to compare and make a booking.</h1>
   </div>
   <!--fill out form-->
   <section id="background-color">

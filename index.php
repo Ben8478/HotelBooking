@@ -17,7 +17,6 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -30,9 +29,6 @@
             <p class="nav-text">Booking</p>
           </a>
         </li>
-
-
-
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,17 +44,15 @@
     <div id="user_info">
       <div id="color_form">
         <div id="centre_form">
-          <p class="general_padding">Name and surname <input type="text" class="form-control" name="name" placeholder="Enter your name and surname" required></p>
-          <p class="general_padding"> Email <input class="form-control" type="email" name="email" placeholder="Enter your email" required></p>
+          <p class="general_padding">Name and surname: <input type="text" class="form-control" name="name" placeholder="Enter your name and surname" required></p>
+          <p class="general_padding"> Email: <input class="form-control" type="email" name="email" placeholder="Enter your email" required></p>
           <div class="general_padding">
             <div class="button_position">
               <button type="submit" value="submit" class="btn btn-secondary">Submit</button>
             </div>
           </div>
-  </form> 
-  </div>
-  </div>
-  </div>
+  </form>
+
 
 
 

@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
 <!--This page is used to display the message that the email as been sent to confirm the booking php mailer is used and info was found on github/phpmailer/phpmailer-->
+
 <head>
   <title>Hotel Booking</title>
   <meta charset="utf-8">
@@ -25,7 +26,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <p class="nav-text">Booking</p>
+            <p class="nav-text">Contact us</p>
           </a>
         </li>
       </ul>
