@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+.general_padding {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+}
+
 #header_position {
     background-color: #343a40;
     color: rgb(220, 220, 220);

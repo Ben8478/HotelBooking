@@ -29,7 +29,7 @@ class Hotel
         <p><?php echo "<strong>Security</strong><br>$this->security<br><br>"; ?></p>
         <p><?php echo "<strong>Price per Night R </strong><br>$this->price<br>"; ?></p>
         <?php echo "<strong>Price for " . ((strtotime($date2)  - strtotime($date1)) / 86400) . " days : R</strong>" . $this->price * ((strtotime($date2)  - strtotime($date1)) / 86400); ?>
-        <?php echo "<input type =\"checkbox\" name =\"hotel\" value=\"$this->name\"'></div>"; ?>
+        <?php echo "<input type =\"radio\" name =\"hotel\" value=\"$this->name\"' required></div>"; ?>
     </div>
 </div>
 <?php
