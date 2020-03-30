@@ -7,6 +7,8 @@
   <title>Hotel Booking</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <link rel='stylesheet' text="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -20,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="index.php">
             <p class="nav-text">Home</p> <span class="sr-only">(current)</span>
           </a>
         </li>

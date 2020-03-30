@@ -9,6 +9,7 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
 ?>
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -16,11 +17,11 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <?php include "include/hotels.php";
 ?>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>

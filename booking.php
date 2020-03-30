@@ -1,15 +1,16 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body id="booking_image">
   <?php include "include/hotels.php"; ?>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,11 +41,11 @@
     <h1 id="booking_head_position">Dear <?php echo $_SESSION['name']; ?>, Please select only one of the following options. </h1>
   </div>
   <?php
-?>
+  ?>
   <!--This form echo's out the compare info by using the method and classes. It also captures the final booking desicion in the form of a checkbox and inserts the info within the Email-->
   <form action="mail.php" method="POST">
     <?php
-//this switch statement identifies the hotel and echo the info of the selected hotel by using the method hotel_show
+    //this switch statement identifies the hotel and echo the info of the selected hotel by using the method hotel_show
     switch ($_POST['allhotels1']) {
       case ('hotel1'):
         echo $Table_bay->hotel_show();
