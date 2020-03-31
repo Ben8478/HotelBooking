@@ -23,12 +23,12 @@ class Hotel
 <div class="hotel_compare">
     <div style="text-align:center;">
         <h1><?php echo "<strong>$this->name</strong><br><br>"; ?></h1>
-        <p><?php echo "<strong>Pool</strong><br>$this->Pool<br>"; ?></p>
-        <p><?php echo "<strong>Wifi</strong><br>$this->wifi<br>"; ?></p>
-        <p><?php echo "<strong>Parking</strong><br>$this->Parking<br>"; ?></p>
-        <p><?php echo "<strong>Security</strong><br>$this->security<br><br>"; ?></p>
-        <p><?php echo "<strong>Price per Night R </strong><br>$this->price<br>"; ?></p>
-        <?php echo "<strong>Price for " . ((strtotime($date2)  - strtotime($date1)) / 86400) . " days : R</strong>" . $this->price * ceil(((strtotime($date2)  - strtotime($date1)) / 86400)); ?>
+            <p><?php echo "<strong>Pool</strong><br>$this->Pool<br>"; ?></p>
+            <p><?php echo "<strong>Wifi</strong><br>$this->wifi<br>"; ?></p>
+            <p><?php echo "<strong>Parking</strong><br>$this->Parking<br>"; ?></p>
+            <p><?php echo "<strong>Security</strong><br>$this->security<br><br>"; ?></p>
+            <p><?php echo "<strong>Price per Night R </strong><br>$this->price<br>"; ?></p>
+            <?php echo "<strong>Price for " . ((strtotime($date2)  - strtotime($date1)) / 86400) . " days : R</strong>" . $this->price * ceil(((strtotime($date2)  - strtotime($date1)) / 86400)); ?>
         <?php echo "<input type =\"radio\" name =\"hotel\" value=\"$this->name\"' required></div>"; ?>
     </div>
 </div>

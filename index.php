@@ -26,7 +26,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <p class="nav-text">Booking</p>
+            <p class="nav-text">Contact us</p>
           </a>
         </li>
       </ul>
@@ -52,21 +52,12 @@
             </div>
           </div>
   </form>
-
-
-
-
-
-
-
-
-
-
-
-  <?php
-  ?>
-
-
+</div>
+</br>
+  <footer style="margin-top:30%;">
+    <p>Posted by: Reece, Ben, Alex</p>
+    <p>Copyright@KingLionHotels</p>
+  </footer>
 </body>
 
 </html>
