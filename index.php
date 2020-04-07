@@ -12,6 +12,7 @@
 </head>
 
 <body id="body_image">
+<!--A navbar imported from bootstrap-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +49,7 @@
           <p class="general_padding"> Email: <input class="form-control" type="email" name="email" placeholder="Enter your email" required></p>
           <div class="general_padding">
             <div class="button_position">
-              <button type="submit" value="submit" class="btn btn-secondary">Submit</button>
+              <button type="submit" value="submit" class="button">Submit</button>
             </div>
           </div>
   </form>

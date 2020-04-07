@@ -13,6 +13,7 @@
 
 <body id="booking_image">
   <?php include "include/hotels.php"; ?>
+  <!--A navbar imported from bootstrap that contains a link to the homepage-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="index.php">
             <p class="nav-text">Home</p> <span class="sr-only">(current)</span>
           </a>
         </li>

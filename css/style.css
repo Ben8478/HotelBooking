@@ -1,3 +1,5 @@
+/*This includes the styling on the first page*/
+
 #body_image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,6 +160,9 @@ input[name="r"] {
 
 /*End Slide*/
 
+
+/*Start of booking section*/
+
 .booking-section {
     background-color: black;
     opacity: 80%;
@@ -265,6 +270,12 @@ legend {
     padding-right: 10px;
 }
 
+
+/*End of booking session*/
+
+
+/*Start of comparison section*/
+
 #header_select {
     font-family: 'Open Sans Condensed', sans-serif;
     background-color: #343a40;
@@ -318,16 +329,27 @@ legend {
 .book_button {
     margin-top: 5%;
     font-size: 20px;
-    background-color: #343a40;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #0cea9e;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #343a40;
     border-radius: 5%;
     opacity: 0.8;
     margin-bottom: 2%;
     color: white;
 }
+
+
+/*End of compare section*/
 
 .container_icon {
     border: 5 px solid black;
@@ -340,6 +362,9 @@ legend {
 .checkbox {
     width: 5px;
 }
+
+
+/*Start of mail section*/
 
 #mail_background {
     background-size: cover;
@@ -356,6 +381,12 @@ legend {
     color: white;
 }
 
+
+/*End of mail section*/
+
+
+/*Universal footer*/
+
 footer {
     margin: 0px;
     background-color: #4e4e4e;
@@ -364,6 +395,9 @@ footer {
     font-size: 20px;
     padding: 5px;
 }
+
+
+/*Start of media queries*/
 
 @media screen and (max-width:770px) {
     #centre_form {
