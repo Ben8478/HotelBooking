@@ -40,7 +40,7 @@
   <div id="header_position">
     <h1 id=" header_main">Welcome to K&L Hotels</h1>
   </div>
-  <!-- A form to capture initial user information -->
+  <!-- A form to capture initial user information and send it to the post super global that will store it as a session superglobal variable-->
   <form action="comparison.php" method="POST">
     <div id="user_info">
       <div id="color_form">
