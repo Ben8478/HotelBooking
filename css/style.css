@@ -1,56 +1,90 @@
 /*This includes the styling on the first page*/
 
-#body_image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/hotel_start.jpg);
-    width: 100%;
-}
 
 .general_padding {
     padding-left: 1.5%;
     padding-right: 1.5%;
     padding-bottom: 1.5%;
 }
+.navbar{
+    background-color: transparent;
 
+}
+.navbar a{
+color: #f3f3f3;
+font-size: 25px;
+font-family: 'Roboto', sans-serif;
+}
+.navbar button{
+    color: #f3f3f3;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    border:none;
+    background-color: transparent;
+    }
+    .modal{
+     
+        align-items: center;
+        background-color: rgb(0,0,0,0.7);
+    }
+#body_img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
 #header_position {
-    background-color: #343a40;
-    color: rgb(220, 220, 220);
+
     font-family: 'Open Sans Condensed', sans-serif;
     opacity: 0.8;
 }
-
-#header_main {
-    width: 30%;
-    font-size: 40px;
+#header_container{
+    margin-right: 0%;
+    margin-left: auto;
+  
+    text-align: right;
 }
 
-h1 {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
 
-#centre_form {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    opacity: 0.8;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8%;
+.btn{
+    background-color:#848e99;
+    border: none;
+    
+}
+.btn:hover{
     background-color: #343a40;
-    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(0,0,0,0.8);
+}
+#user_signup{
+    font-family: 'Roboto', sans-serif;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+}
+#sign_up_button{
+    width:100%;
+  
 }
 
-#color_form {
-    opacity: 0.8;
+#user_info{
+    color:#f3f3f3;
+width: 35%;
+margin-left: auto;
+margin-right: auto;
+font-size: 25px;
+}
+
+#close_button{
+    width: 33.9%;
+    margin-left: auto;
+margin-right: auto;
 }
 
 .button_position {
-    width: 10%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -68,175 +102,121 @@ h1 {
 }
 
 #background-color {
-    background-color: #378bde;
+    background-color: #f3f3f3;
+    
 }
 
 
 /*Begin Slideshow*/
 
-.slideshow_position {
-    width: 100%;
-    margin-left: 60%;
-    margin-top: -16%;
-    position: absolute;
-}
-
-.slidershow {
-    width: 700px;
-    height: 400px;
-    overflow: hidden;
-    width: 70%;
-    margin-left: 70%;
-    margin-top: -16%;
-    position: relative;
-}
-
-.middle {
-    transform: translate(-50%, -50%);
-}
-
-.navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.bar {
-    width: 50px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.bar:hover {
-    background: #fff;
-}
-
-input[name="r"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-.slides {
-    width: 500%;
-    height: 100%;
-    display: flex;
-}
-
-.slide {
-    width: 20%;
-    transition: 0.6s;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
-#r1:checked~.s1 {
-    margin-left: 0;
-}
-
-#r2:checked~.s1 {
-    margin-left: -20%;
-}
-
-#r3:checked~.s1 {
-    margin-left: -40%;
-}
-
-#r4:checked~.s1 {
-    margin-left: -60%;
-}
-
-#r5:checked~.s1 {
-    margin-left: -80%;
-}
-
-
-/*End Slide*/
-
 
 /*Start of booking section*/
-
+.nbar{
+    background-color:#7ebee6 ;
+    
+}
+.nbar a{
+   color: #f3f3f3;
+}
 .booking-section {
-    background-color: black;
-    opacity: 80%;
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    height: 400px;
-    width: 400px;
-    border: white solid 5px;
-    width: 30%;
-    display: inline-block;
+background-color:rgb(255,255,255,0.4);
+margin-top: 2%;
+width:29%;
+height: 500px;
+margin-left: 2%;
+display: inline-block;
+border-radius:4px;
+
+
 }
 
-.compare-but {
-    background-color: #0cea9e;
-    border-radius: 25px;
-    width: 150px;
-    display: inline-block;
+.booking-section div {
+
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+
+
+
+}
+.carou-T{
+    color:black;
 }
 
+
+.book_section_headings{
+    color:black;
+}
+.slideshow{
+    vertical-align: top;
+    position: relative;
+    margin-left: 4%;
+    border-radius:4px;
+    margin-top: 5%;
+    width:60%;
+    opacity: 0.7;
+    display: inline-block;
+}
+.slideshow img{
+    height:500px;
+    border-radius:4px;
+  
+
+}
+.inputs{
+    border:none;
+    padding:3%;
+    border-radius:4px;
+    width: 100%;
+}
 .container-2 {
-    background-color: white;
+    background-color: transparent;
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: black solid 5px;
+    box-shadow: 1px 1px 2px 3px rgb(0,0,0,0.4);
+    border-radius:4px;
+  
 }
 
 .hotel1 {
-    width: 40%;
+    width: 100%;
     display: inline-block;
 }
 
 .hotel2 {
-    width: 40%;
+    width: 100%;
     display: inline-block;
+  
 }
 
-.cont-2-text {
-    font-family: 'Ubuntu', sans-serif;
-}
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #0cea9e;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
 
-.button:hover {
-    background-color: #09bd94
+#compare{
+    margin-top: 8%;
 }
-
-.button:active {
-    background-color: #09bd94;
-    box-shadow: 0 5px #79838e;
-    transform: translateY(4px);
+#get_started{
+    padding:3%;
+    background-color: rgb(255,255,255,0.2);
+    color: #f3f3f3;
+width: 40%;
+text-align: center;
+margin-left: auto;
+margin-right: 2%;
+margin-top:17%;
+border-radius: 4PX;
+font-family: 'Roboto', sans-serif;
 }
 
 h4 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
-
+#contact{
+    text-align:center;
+}
 label,
 legend {
     font-family: 'Ubuntu', sans-serif;
@@ -257,7 +237,7 @@ legend {
 }
 
 .nav-text {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
 
@@ -277,7 +257,7 @@ legend {
 /*Start of comparison section*/
 
 #header_select {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #343a40;
     color: rgb(220, 220, 220);
     padding: 1%;
@@ -317,35 +297,61 @@ legend {
 
 .hotel_compare {
     vertical-align: top;
-    margin-top: 5%;
-    opacity: 0.8;
-    background-color: #378bde;
-    width: 40%;
+    margin-top: 1%;
+    
+    background-color: rgb(255,255,255,0.7);
+    width: 42%;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 4px;
     margin-left: 5%;
+    height: 560px;
+    padding: 2%;
+
+}
+.hotel_compare h1{
+    margin-left: 19%;
+}
+.radio{
+    width:25px;
+    height:25px;
+    margin-left:2%;
+    vertical-align: bottom;
+}
+.hotel_compare img{
+    width: 60%;
+    
+    vertical-align: top;
+    margin-top: 5%;
+   border-radius: 4px;
+    margin-left: 19%;
+
+}
+.attr{
+    width:80%;
+    margin-left: 19%;
+    margin-top: 5%;
+}
+.attr p{
+    display: inline-block;
+    width: 30%;
 }
 
 .book_button {
-    margin-top: 5%;
+    margin-top: 2%;
     font-size: 20px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+    margin-bottom: 2%;
+  
+    
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    background-color: #0cea9e;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+   
+   border:none;
+   border-radius: 4px;
+  padding:0.4%;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5%;
-    opacity: 0.8;
-    margin-bottom: 2%;
-    color: white;
+
 }
 
 
@@ -418,25 +424,71 @@ footer {
         display: none;
     }
     .booking-section {
-        width: 100%;
+        width: 45%;
     }
+    .hotel_compare{
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        padding-top: 1.5%;
+        height:580px;
+        padding-bottom: 1.5%;
+        
+    }
+    #body_img{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+      
+        
+    }
+
 }
 
-@media screen and (max-width:680px) {
-    #centre_form {
-        width: 80%;
-    }
-}
+
 
 @media screen and (max-width:560px) {
-    .hotel_compare {
-        width: 80%;
+    .hotel_compare{
+        width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
+        margin-top: 4%;
+        height: 450px;
+        box-shadow: 4px 4px 2px 4px rgb(0,0,0,0.2)
+        
+        
     }
+    .booking-section{
+        margin:0;
+    }
+    #user_info{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        }
+        #close_button{
+            width: 87.9%;
+            margin-left: auto;
+        margin-right: auto;
+        }
+    .hotel_compare img{
+margin-top: 4%;
+    }
+
+.attr{
+    margin-left:15%;
+}
+    .attr p{
+        display: inline-block;
+        width: 30%;
+    }
+    
     #header_main {
         font-size: 20px;
     }
@@ -454,51 +506,6 @@ footer {
         margin-right: auto;
         width: 80%;
     }
-    .slidershow {
-        display: none;
-    }
+
 }
 
-@media screen and (min-width:1026px) {
-    .slidershow {
-        margin-top: -20%;
-    }
-}
-
-@media screen and (max-width:1025px) {
-    .slidershow {
-        margin-top: -30%;
-        width: 70%;
-    }
-    .hotel1 {
-        margin-top: -10%;
-        display: block;
-    }
-    .hotel2 {
-        display: block;
-    }
-}
-
-@media screen and (max-width:900px) {
-    .slidershow {
-        width: 70%;
-    }
-    .hotel1 {
-        margin-top: -10%;
-        display: block;
-    }
-    .hotel2 {
-        display: block;
-    }
-}
-
-@media screen and (min-width:2000px) {
-    .slidershow {
-        margin-top: -20%;
-        width: 70%;
-        margin-left: 100%;
-    }
-    .booking-section {
-        margin-left: 20%;
-    }
-}

@@ -15,145 +15,80 @@ if (isset($_POST)) { // if isset looks to see if the $_POST variable exists
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/style.css">
+ 
   <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/style.css">
 </head>
 <?php include "include/hotels.php";
 ?>
 
 <body>
   <!--A navbar imported from bootstrap that contains a link to the homepage-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">
-            <p class="nav-text">Home</p> <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <p class="nav-text">Contact us</p>
-          </a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 ouline-color" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <div id="header_select">
-    <h1 id="select_h1"> Hi <?php echo $_SESSION['name']; ?> please select hotels to compare and make a booking.</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src = "images/logo.png">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+      <a class="nav-link" href="index.php">Home </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact us</a>
+      </li>
+
+    </ul>
   </div>
+</nav>
+  <img id = "body_img" src ="images/camping.jpg">
+</div>
   <!--fill out form-->
-  <section id="background-color">
+  
     <div class="booking-section">
-      <br>
+     
       <form method="post" action="booking.php" role="form" class="booking-box">
         <div>
-          <legend>Destination Details:</legend><br>
-          <div class="hotel1">
-            <img src="images/img-book2.png" alt="" class="book-img"><label for="hotel1">Hotel 1:</label>
-            <select id="allhotels" name="allhotels1">
+          <!--This contains the section where the user select in and out date and sends the info to the post superglobal-->
+          <legend class = "book_section_headings">Destination Details:</legend><br>
+          
+            <img src="images/img-book2.png" alt="" class="book-img"><label for="hotel1" class = "book_section_headings">Hotel 1:</label>
+            <select class ="inputs" id="allhotels" name="allhotels1">
               <option value="hotel1" name="hotel1">The Table bay hotel</option>
               <option value="hotel2" name="hotel2"> Cape Gace Hotel</option>
               <option value="hotel3" name="hotel3">The Silo Hotel</option>
             </select>
-          </div>
-          <div class="hotel2">
-            <img src="images/img-book2.png" alt="" class="book-img "><label for="hotel2">Hotel 2:</label>
-            <select id="allhotels" name="allhotels2">
+          
+          
+            <img src="images/img-book2.png" alt="" class="book-img "><label for="hotel2" class = "book_section_headings">Hotel 2:</label>
+            <select class ="inputs" id="allhotels" name="allhotels2">
               <option value="hotel1" name="hotel1">The Table bay hotel</option>
               <option value="hotel2" name="hotel2"> Cape Gace Hotel</option>
               <option value="hotel3" name="hotel3">The Silo Hotel</option>
             </select>
-          </div>
+          
           <br><br>
-          <img src="images/img-book.png" alt="" class="book-img"><label for="checkin">Check in date:</label><br>
-          <input type="date" id="checkin" min="<?php  echo date('Y-m-d'); ?>" name="indate"  required>
+          <img src="images/img-book.png" alt="Date icon" class="book-img"><label for="checkin" class = "book_section_headings">Check in date:</label><br>
+          <input class ="inputs" type="date" id="checkin" min="<?php  echo date('Y-m-d'); ?>" name="indate"  required>
           <br><br>
-          <img src="images/img-book.png" alt="" class="book-img"><label for="checkout">Check out date:</label><br>
-          <input type="date" id="checkout" min = "<?php echo date('Y-m-d',strtotime('+1day'));?>" name="outdate" required>
-          <br>
-          <br>
-          <button type="submit" name="submit" class="button compare-but"onclick="getinput()">Compare</button><br><br>
+          <img src="images/img-book.png" alt="Date icon" class="book-img"><label for="checkout" class = "book_section_headings">Check out date:</label><br>
+          <input class ="inputs" type="date" id="checkout" min = "<?php echo date('Y-m-d',strtotime('+1day'));?>" name="outdate" required>
+
+          <!--A button that submits the date into the post superglobal-->
+          <button id = "compare" type="submit" name="submit" class="btn btn-primary btn-lg btn-block">Compare</button><br><br>
       </form>
     </div>
-    </div>
-    <div class="container position">
-      <div class="slidershow middle">
-        <div class="slides">
-          <input type="radio" name="r" id="r1" checked>
-          <input type="radio" name="r" id="r2">
-          <input type="radio" name="r" id="r3">
-          <input type="radio" name="r" id="r4">
-          <input type="radio" name="r" id="r5">
-          <div class="slide s1">
-            <img src="images/img3.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/img2.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/img3.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/img4.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/img5.jpg" alt="">
-          </div>
-        </div>
-        <div class="navigation">
-          <label for="r1" class="bar"></label>
-          <label for="r2" class="bar"></label>
-          <label for="r3" class="bar"></label>
-          <label for="r4" class="bar"></label>
-          <label for="r5" class="bar"></label>
-        </div>
-  </section>
+
+  
   </div>
-  </div>
-  </div>
-  <br>
-  <div class="container-2">
-    <h3 class="cont-2-text"><b class="number">619,784</b> <br>Thousand hotels to choose from with the latest updated prices in real time</h3>
-  </div>
-  <br>
-  </div>
-  <br>
-  <!--Icon section-->
-  <div class="container">
-    <div class="row">
-      <div class="col container_icon"><img src="images/icon1.png" alt="" width="80px" class="icon-img"><br>
-        <h4>Over 100 Hotel Booking Sites</h4>
-      </div>
-      <div class="col container_icon"><img src="images/icon2.png" alt="" width="80px" class="icon-img"><br>
-        <h4>Compare all Airlines</h4>
-      </div>
-      <div class="col container_icon"><img src="images/icon3.png" alt="" width="80px" class="icon-img"><br>
-        <h4>High-end Entertainment</h4>
-      </div>
-      <div class="col container_icon"><img src="images/icon4.png" alt="" width="80px" class="icon-img"><br>
-        <h4>Best Rates Guaranteed</h4>
-      </div>
-      <div class="col container_icon"><img src="images/icon5.png" alt="" width="80px" class="icon-img"><br>
-        <h4>Compare Hotels Worldwide</h4>
-      </div>
-    </div>
-    <br>
-    <br>
-    <footer>
-      <p>Posted by: Reece, Ben, Alex</p>
-      <p>Copyright@KingLionHotels</p>
-    </footer>
-  <script>
+
+  
+
+
+</div>
+
     
 
     

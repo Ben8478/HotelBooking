@@ -1,44 +1,6 @@
 <?php session_start(); ?>
-<!doctype html>
-<html lang="en">
-<!--This page is used to display the message that the email as been sent to confirm the booking php mailer is used and info was found on github/phpmailer/phpmailer-->
 
-<head>
-  <title>Hotel Booking</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-  <link rel='stylesheet' text="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
 
-<body id="mail_background">
-    <!--A navbar imported from bootstrap that contains a link to the homepage-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-pic"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">
-            <p class="nav-text">Home</p> <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <p class="nav-text">Contact us</p>
-          </a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 ouline-color" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
   <?php
 
   // Import PHPMailer classes into the global namespace
@@ -83,21 +45,10 @@
     $mail->AltBody = "Dear " . $_SESSION['name'] . ", Thank you for your booking at hotel " . $_POST['hotel'] . " The hotel manager will be in contact with you shortly to confirm the booking. Kindest Regards ";
 
     $mail->send();
-    echo "<div><h1 id =\"header_mail\">A confirmation email has been sent</h1></div>";
+    echo "Confirmation email has been sent";
   } catch (Exception $e) {
-    echo "<div><h1 id =\"header_mail\"> Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1></div>";
+    echo "<h1 id =\"header_mail\"> Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1>";
   }
 
 
   ?>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <footer style="margin-top:60%;">
-      <p>Posted by: Reece, Ben, Alex</p>
-      <p>Copyright@KingLionHotels</p>
-    </footer>
-  </body>
-
-</html>
